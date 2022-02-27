@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/graphfragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/linefragment" />
+
+    <LinearLayout
+        android:id="@+id/linefragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginBottom="40dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/alpha"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="phone"
+                android:text="0.3" />
+
+            <TextView
+                android:id="@+id/alphatext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/alpha"
+                android:textSize="20dp"></TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <EditText
+                android:id="@+id/beta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="phone"
+                android:text="0.28" />
+
+            <TextView
+                android:id="@+id/betatext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/beta"
+                android:textSize="20dp"></TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <EditText
+                android:id="@+id/gamma"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="phone"
+                android:text="0.7" />
+
+            <TextView
+                android:id="@+id/gammatext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/gamma"
+                android:textSize="20dp"></TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/delta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="phone"
+                android:text="0.3" />
+
+            <TextView
+                android:id="@+id/deltatext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/delta"
+                android:textSize="20dp"></TextView>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/showInput"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Show"
+            android:textColor="@android:color/white"
+            app:layout_constraintBottom_toBottomOf="@+id/delta" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

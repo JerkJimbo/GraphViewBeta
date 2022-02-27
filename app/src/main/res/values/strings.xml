@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">GraphViewBeta</string>
+    <string name="alpha">Alpha</string>
+    <string name="gamma">Gamma</string>
+    <string name="delta">Delta</string>
+    <string name="show">Show</string>
+    <string name="beta">Beta</string>
+</resources>
